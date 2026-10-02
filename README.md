@@ -7,7 +7,7 @@ gamification. Phase 1 trackers: **Google Fitbit Air (Google Health)** and **Ultr
 Full planning notes: [docs/planning-summary.md](docs/planning-summary.md). Pipeline overview: [docs/architecture.md](docs/architecture.md).
 
 ## Stack
-React (Vite) · Node.js (Express, TypeScript) · PostgreSQL · pg-boss job queue (in Postgres) · Cloudflare R2 for temporary uploads · Railway hosting (plain Docker, kept portable).
+React (Vite) · Node.js (Express, TypeScript) · PostgreSQL · pg-boss job queue (in Postgres) · Railway hosting (plain Docker, kept portable).
 
 ## Layout
 ```
@@ -42,7 +42,7 @@ This is a scaffold, not a working product.
 |---|---|
 | DB schema (users, groups, uploads, samples, daily metrics, points, badges, opt-in) | Written |
 | Ultrahuman raw CSV adapter + validation + test | Written, based on the one sample file |
-| Direct-upload flow (presigned URL -> complete -> enqueue -> poll) | Written, untested against real R2 |
+| Direct file upload flow (in-memory parse -> enqueue -> poll) | Implemented (no S3 / external storage needed) |
 | Worker `processUpload` | Wired up, download/upsert/aggregate are TODO |
 | Auth, metrics, groups, leaderboards routes | Stubs (501) |
 | Fitbit / Google Health adapter | Intentionally not written until a real archive's file layout is known |

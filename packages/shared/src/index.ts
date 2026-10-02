@@ -40,5 +40,7 @@ export interface UploadSummary {
 /** Job payload shared by API (producer) and worker (consumer). */
 export interface ProcessUploadJob {
   uploadId: string;
+  filename: string;
+  content: string;
 }
 export const PROCESS_UPLOAD_QUEUE = 'process-upload';
