@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+coverage/
+.vite/
+# raw tracker exports must never be committed (health data)
+*.zip
+*.tgz
+/uploads/
+/tmp-uploads/
