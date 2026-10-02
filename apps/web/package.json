@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "@flb/shared": "*",
+    "@mui/icons-material": "^9.4.0",
+    "@mui/material": "^9.4.0",
     "@tanstack/react-query": "^5.104.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -18,11 +22,9 @@
     "recharts": "^2.15.4"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.3.3",
     "@types/react": "^18.3.31",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react": "^4.7.0",
-    "tailwindcss": "^4.3.3",
     "typescript": "^5.9.3",
     "vite": "^5.4.21"
   }
